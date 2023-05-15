@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    }
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px red;
+    color: whitesmoke;
+    background-color: red;
+}
+
+button:hover{
+    background-color: rgb(235,33,46);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: red;
+}
+
+header{
+    background-color: rgb(219,215,210);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: red;
+    font-size: 1.6em
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: red;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:
+    linear-gradient(
+        0deg, rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/52718683105_b02b1ac5d7_b.jpg"); 
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.7sem;
+}
+
+#historia .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#hacete-socio{
+    background-color:  rgb(219,215,210);
+    text-align: center;
+}
+
+#hacete-socio .container{
+padding: 100px 0px;
+}
+
+#hacete-socio h2{
+    margin-top: 0;
+}
+
+#hacete-socio p{
+    display: none;
+}
+
+#hacete-socio .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 15px;
+
+}
+
+#hacete-socio h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+#hacete-socio h3{
+    color: whitesmoke;
+}
+
+.carta:first-child{
+    background-image:
+    linear-gradient(
+        0deg, rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/52718683310_f1e43f29a6_b.jpg");
+}
+
+.carta:nth-child(2) {
+    background-image:
+    linear-gradient(
+        0deg, rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/c1d4263d28b72169edebf78c2027e088.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image:
+    linear-gradient(
+        0deg, rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("media/independiente-ya-supero-500-millones-colecta-organizo-santiago-maratea-989223-192840.jpg");
+}
+
+#colecta .container{
+ text-align: center;
+ padding: 200px 12px;
+ }
+
+ #colecta li{
+    margin: 15px 0px;
+    font-weight: bold;
+ }
+
+ #final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke ;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 5vw;
+}
+
+#final button{
+    font-size: 2.1vw;
+}
+
+footer{
+    background-color: rgb(219,226,233);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}    
+
+#hero h1{
+    font-size: 5em;
+}
+
+#historia .container{
+display: flex;}
+
+#historia .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+#historia .img-container{
+    background-image: 
+    url("media/Independiente-tendra-que-poner-plata-por-este-jugador.jpg");
+background-size: cover;
+background-position: center center;
+height: 500px;
+width: 600px;
+}
+
+#hacete-socio .programas{
+    display: flex;
+    justify-content: center;
+}
+
+#hacete-socio p{
+    color: whitesmoke;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 30px;
+}
+
+#hacete-socio h3{
+    margin-top: 0;
+}
+
+#hacete-socio .carta{
+    padding: 50px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.5);
+}
+
+#colecta{
+background-image: url("media/Hinchada-Independiente-LDA-scaled.jpg");
+background-repeat: no-repeat;
+background-size: 500px 400px;
+background-position: calc(100vw - 700px) 120px;
+}
+
+#colecta .container{
+    text-align: initial;
+}
+
+#colecta ul{
+    margin-left: 100px;
+}
+
+#final h2{
+font-size: 3em;
+}
+
+#final button{
+font-size: 1em;
+}
+
+footer .container{
+    justify-content: flex-end;
+}
+
+}
+
+@media (min-width: 1200px){
+    #colecta{
+        background-position-x: calc(100vw - 800px);
+    }
+}
